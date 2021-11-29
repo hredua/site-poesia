@@ -5,7 +5,23 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+
 body {
+    background: black url(../imagens/FB_IMG_1578580876635.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+header {
     background-color: black;
-    
+    color: white;
+    text-align: center;
+    height: 200px;
+}
+
+header h1 {
+   font-size: 4em;
+   font-family: 'Passion One', sans-serif;
 }
