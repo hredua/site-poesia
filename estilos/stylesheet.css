@@ -54,6 +54,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    padding-right: 30px;
     font-family: var(--fonte-padrao);
     font-size: 2vw;
 }
