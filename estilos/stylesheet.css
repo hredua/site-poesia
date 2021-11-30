@@ -7,12 +7,17 @@
     --fonte-padrao: 'Sriracha', sans-serif;
     --fonte-destaque: 'Passion One', sans-serif;
 }
+::-webkit-scrollbar {
+    width: 0px;
+}
 
 * {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
+    
 }
+
 
 html, body {
     min-width: 94vw;
