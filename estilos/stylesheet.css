@@ -1,62 +1,106 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte-padrao: 'Sriracha', sans-serif;
+    --fonte-destaque: 'Passion One', sans-serif;
+}
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
 }
 
-
-
-body {
-    background-color: black;
-    background: black url(../imagens/FB_IMG_1578580876635.jpg) top center no-repeat fixed;
-    background-size: cover;
+html, body {
+    min-width: 94vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgray;
+    
 }
 
-header {
+header, footer {
     background-color: black;
     color: white;
     text-align: center;
-    height: 230px;
+    padding: 10px;
 }
 
 header > h1 {
-    font-family: 'Passion One', sans-serif;
-    font-size: 8em;
-    padding: 20px 0px 1px 0px;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte-destaque);
+    font-size: 10vw;
 }
 
-header > p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+header p {
+    padding-bottom: 50px;
 }
 
-header a {
+header a, footer a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
-.principal-page {
-  
+header a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
-.body {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-padrao);
+    font-size: 2vw;
+}
+/*
+Aumenta a letra para ficar legível em telas menores
+*/
+@media (max-width: 600px) {
+    header > h1 {
+        font-size: 20vw;
+    }
+
+    section {
+        font-size: 4vw;
+    }
+}
+
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
     background-color: white;
-    max-width: 900px;
-    font-size: 4em;
-    margin: auto;
+    color: black;
 }
 
-.right-list {
-
+section.img {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.486);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.right-list > h2 {
-    margin: 20px 20px;
-    background-color: lightgray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
-    padding: 0px 70px 0px 70px;
+section.img > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.548);
+    text-shadow: 1px 1px 0px black;
 }
+
+section#img1 {
+    background-image: url(../imagens/FB_IMG_1578580876635.jpg);
+    background-position: center center;
+}
+
+section#img2 {
+    background-image: url(../imagens/multidao.jpg);
+    background-position: center top;
 }
