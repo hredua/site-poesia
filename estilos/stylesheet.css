@@ -49,12 +49,7 @@ header a {
 }
 
 .right-list {
-    position: fixed;
-    right: 7%;
-    top: 30%;
-    background-color: white;
-    height: 300px;
-    max-width: 300px;
+
 }
 
 .right-list > h2 {
